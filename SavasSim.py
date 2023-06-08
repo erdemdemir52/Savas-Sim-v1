@@ -6,13 +6,13 @@ sistemDurum = True
 while sistemDurum:
     try:
         menuSec = int(input("Hangi işlemi yapmak istiyorsunuz:"
-                            "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış"))
+                            "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış\n"))
         while menuSec < 1 or menuSec > 5:
             menuSec = int(input("Lütfen 1 ile 5 arasında bir değer giriniz:"
-                                "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış"))
+                                "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış\n"))
     except:
         menuSec = int(input("Lütfen sayısal değer giriniz:"
-                            "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış"))
+                            "\n1-Asker Ekle\n2-Asker Çıkar\n3-Birliği Gör\n4-Savaşa Gir\n5-Çıkış\n"))
 
     if menuSec == 1:
         AskerModul.AskerEkle()
